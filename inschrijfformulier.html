@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website trip</title>
+</head>
+<form action="https://formspree.io/f/mrbpznaj" method="post">
+    <header>
+        <h1> De trip naar Athene - Axl Versluys </h1>
+        <a href="https://nl.wikipedia.org/wiki/Athene_(stad)" target="_blank">
+            <figure>
+                <img src="media/sunset-in-athens-1.png" alt="Foto van Athene">
+                <figcaption>Athene bij zonsopgang</figcaption>
+            </figure>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="Inschrijfformulier.html">Inschrijfformulier</a></li>
+                <li><a href="index.html#Paklijst">Paklijst</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <fieldset>
+        <legend>Persoonlijke informatie</legend>
+        <label for="naam">Volledige naam</label>
+        <input id="naam" name="volledige_naam" type="text" placeholder="Axl Versluys" required>
+        <br>
+        <label for="vrouw">Vrouw</label>
+        <input id="vrouw" name="geslacht" type="radio" value="V">
+        <label for="man">Man</label>
+        <input id="man" name="geslacht" type="radio" value="M">
+        <label for="neutraal">X</label>
+        <input id="neutraal" name="geslacht" type="radio" value="X">
+        <br>
+        <label for="verjaardag">Verjaardag:</label>
+        <input type="date" id="verjaardag" name="verjaardag">
+        <br>
+        <label for="telefoonnummer">Telefoonnummer:</label>
+        <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="0472576402" required>
+        <br>
+        <label for="accomodatie">Kies je accomodatie</label>
+        <select name="accomodatie" id="accomodatie">
+            <option value="hot">Hotel</option>
+            <option value="hos">Hostel</option>
+            <option value="app">Appartement</option>
+            <option value="benb">B&B</option>
+        </select>
+        <br>
+        <label for="all-in">all-in</label>
+        <input id="all-in" name="eten" type="checkbox" value="all-in">
+        <label for="half-in">half-in</label>
+        <input id="half-in" name="eten" type="checkbox" value="half-in">
+        <label for="niets">niets</label>
+        <input id="niets" name="eten" type="checkbox" value="niets">
+
+    </fieldset>
+    <fieldset>
+        <legend>Feedback over het reisschema</legend>
+        <textarea name="feedback" id="feedback" rows="3" cols="20"> </textarea>
+    </fieldset>
+    <input type="submit" value="Verzenden">
+    <input type="reset" value="Reset">
+    <footer>
+        <time datetime='2025-03-09 10:00'>9 maart 2025 om 10 uur</time>
+        <p>Gemaakt door Axl Versluys</p>
+    </footer>
+</form>
